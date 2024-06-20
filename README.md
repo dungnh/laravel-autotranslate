@@ -1,18 +1,18 @@
 # Laravel Autotranslate
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/bernskioldmedia/laravel-autotranslate.svg?style=flat-square)](https://packagist.org/packages/bernskioldmedia/laravel-autotranslate)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/bernskioldmedia/laravel-autotranslate/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/bernskioldmedia/laravel-autotranslate/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/bernskioldmedia/laravel-autotranslate/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/bernskioldmedia/laravel-autotranslate/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/bernskioldmedia/laravel-autotranslate.svg?style=flat-square)](https://packagist.org/packages/bernskioldmedia/laravel-autotranslate)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/coliving/laravel-autotranslate.svg?style=flat-square)](https://packagist.org/packages/coliving/laravel-autotranslate)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/coliving/laravel-autotranslate/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/coliving/laravel-autotranslate/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/coliving/laravel-autotranslate/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/coliving/laravel-autotranslate/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/coliving/laravel-autotranslate.svg?style=flat-square)](https://packagist.org/packages/coliving/laravel-autotranslate)
 
-A Laravel package to automatically translate the application's JSON language files into a chosen language using DeepL.
+A Laravel package to automatically translate the application's JSON language files into a chosen language using DeepL. This is folks from bernskioldmedia/laravel-autotranslate package to supports Laravel 11.
 
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require bernskioldmedia/laravel-autotranslate
+composer require coliving/laravel-autotranslate
 ```
 
 You can install the package using the installation command:

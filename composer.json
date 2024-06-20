@@ -1,30 +1,31 @@
 {
-    "name": "bernskioldmedia/laravel-autotranslate",
+    "name": "coliving/laravel-autotranslate",
     "description": "A Laravel package to automatically translate the application's language files into a chosen language using DeepL.",
     "keywords": [
         "bernskioldmedia",
         "laravel",
         "laravel-autotranslate"
     ],
-    "homepage": "https://github.com/bernskioldmedia/laravel-autotranslate",
+    "homepage": "https://github.com/dungnh/laravel-autotranslate",
     "license": "MIT",
     "authors": [
         {
-            "name": "Bernskiold Media",
-            "email": "hello@bernskioldmedia.com",
+            "name": "Dzung Nguyen",
+            "email": "dungnh@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.1",
+        "php": "^8.1 || ^8.3",
         "deeplcom/deepl-php": "^1.2",
-        "illuminate/contracts": "^9.0|^10.0",
-        "spatie/laravel-package-tools": "^1.13.0"
+        "illuminate/contracts": "^9.0|^10.0|^11.0",
+        "spatie/laravel-package-tools": "^1.13.0",
+        "symfony/http-client": "^7.1"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
-        "nunomaduro/collision": "^6.0|^7.0",
-        "nunomaduro/larastan": "^2.0.1",
+        "nunomaduro/collision": "^6.0|^7.0|^8.0",
+        "larastan/larastan": "^2.9",
         "orchestra/testbench": "^7.0|^8.0",
         "pestphp/pest": "^1.21|^2.0",
         "pestphp/pest-plugin-laravel": "^1.1|^2.0",
@@ -32,7 +33,7 @@
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^9.5|^10.0",
-        "spatie/laravel-ray": "^1.26"
+        "spatie/laravel-ray": "^1.36"
     },
     "autoload": {
         "psr-4": {
@@ -56,7 +57,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true
         }
     },
     "extra": {
