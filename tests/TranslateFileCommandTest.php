@@ -18,7 +18,7 @@ it('can translate the file', function () {
             ->withAnyArgs()
             ->once()
             ->andReturn([
-                new TextResult('Min ej översatta teststräng', 'en'),
+                new TextResult('Min ej översatta teststräng', 'EN', 10),
             ]);
     });
 
