@@ -2,13 +2,16 @@
 
 namespace BernskioldMedia\Autotranslate;
 
-use function collect;
-use function config;
-use DeepL\Translator;
 use const ENT_HTML5;
 use const ENT_QUOTES;
-use function html_entity_decode;
+
+use DeepL\DeepLException;
+use DeepL\Translator;
 use Illuminate\Support\Collection;
+
+use function collect;
+use function config;
+use function html_entity_decode;
 use function preg_replace;
 use function str_replace;
 
@@ -16,11 +19,10 @@ class TranslateStrings
 {
     public function __construct(
         protected Translator $translator
-    ) {
-    }
+    ) {}
 
     /**
-     * @throws \DeepL\DeepLException
+     * @throws DeepLException
      */
     public function execute(Collection $strings, string $targetLanguage): Collection
     {

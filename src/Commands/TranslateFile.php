@@ -2,14 +2,16 @@
 
 namespace BernskioldMedia\Autotranslate\Commands;
 
+use const JSON_THROW_ON_ERROR;
+
 use BernskioldMedia\Autotranslate\TranslateStrings;
-use function collect;
 use DeepL\DeepLException;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use function json_decode;
-use const JSON_THROW_ON_ERROR;
 use JsonException;
+
+use function collect;
+use function json_decode;
 use function lang_path;
 
 class TranslateFile extends Command
@@ -21,7 +23,7 @@ class TranslateFile extends Command
     public function handle(TranslateStrings $translator): int
     {
         $language = $this->argument('lang');
-        $deeplLanguageCode = $this->argument('deeplCode', $language);
+        $deeplLanguageCode = $this->argument('deeplCode') ?? $language;
 
         $path = lang_path($language.'.json');
         $errors = [];

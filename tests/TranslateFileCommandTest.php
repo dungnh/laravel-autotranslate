@@ -4,6 +4,7 @@ use DeepL\TextResult;
 use DeepL\Translator;
 use Illuminate\Support\Facades\File;
 use Mockery\MockInterface;
+
 use function Pest\testDirectory;
 
 it('can translate the file', function () {
@@ -18,7 +19,7 @@ it('can translate the file', function () {
             ->withAnyArgs()
             ->once()
             ->andReturn([
-                new TextResult('Min ej översatta teststräng', 'en'),
+                new TextResult('Min ej översatta teststräng', 'EN', 10),
             ]);
     });
 
